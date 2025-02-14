@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://b43a8kinte263"]
+
+[ext_resource type="Script" path="res://win_round.gd" id="1_gg5lk"]
+[ext_resource type="Texture2D" uid="uid://dlg4f12q1vlf6" path="res://Back.jpg" id="1_tgdnp"]
+
+[node name="Win_round" type="Node2D"]
+script = ExtResource("1_gg5lk")
+
+[node name="Back" type="Sprite2D" parent="."]
+position = Vector2(577.889, 325.25)
+scale = Vector2(0.968148, 0.968148)
+texture = ExtResource("1_tgdnp")
+flip_h = true
+
+[node name="Panel" type="Panel" parent="Back"]
+texture_filter = 6
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -334.545
+offset_top = 66.8803
+offset_right = -1268.54
+offset_bottom = -514.12
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Retry" type="Button" parent="Back/Panel"]
+texture_filter = 6
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1.00497
+offset_bottom = 0.000297546
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 35
+text = "Retry"
+
+[node name="Panel2" type="Panel" parent="Back"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 91.7082
+offset_top = 66.8803
+offset_right = -842.292
+offset_bottom = -514.12
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Quit" type="Button" parent="Back/Panel2"]
+texture_filter = 6
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.011
+anchor_bottom = 1.0
+offset_right = 0.0741882
+offset_bottom = -0.999702
+theme_override_font_sizes/font_size = 35
+text = "Quit"
+
+[node name="Label" type="Label" parent="Back"]
+texture_filter = 6
+offset_left = -199.033
+offset_top = -175.441
+offset_right = 220.967
+offset_bottom = -11.4408
+theme_override_font_sizes/font_size = 100
+text = "WIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2

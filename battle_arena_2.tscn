@@ -1,0 +1,77 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpnas3jqh3mr8"]
+
+[ext_resource type="Texture2D" uid="uid://dq13ldos4whaf" path="res://arena.png" id="1_78cw0"]
+[ext_resource type="Script" path="res:// battle_arena2.gd" id="1_wjfbv"]
+[ext_resource type="PackedScene" uid="uid://dnlrhp51yyupn" path="res://Characters/hero.tscn" id="2_h5khs"]
+[ext_resource type="PackedScene" uid="uid://dgjr4fi2nc3i4" path="res://Characters/Monsters/monster_2.tscn" id="3_016kt"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_wjfbv")
+
+[node name="Arena" type="Sprite2D" parent="."]
+position = Vector2(577, 325)
+scale = Vector2(1.66497, 1.66497)
+texture = ExtResource("1_78cw0")
+
+[node name="Hero" parent="." instance=ExtResource("2_h5khs")]
+position = Vector2(321, 373)
+
+[node name="Timer" type="Timer" parent="Hero"]
+
+[node name="Monster2" parent="." instance=ExtResource("3_016kt")]
+position = Vector2(807, 388)
+
+[node name="Timer2" type="Timer" parent="Monster2"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 361.0
+offset_top = 42.0
+offset_right = -376.0
+offset_bottom = -523.0
+
+[node name="AttackButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Atack"
+
+[node name="SuperAttackButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Super Atack"
+
+[node name="StaminaLabel" type="Label" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 506.0
+offset_top = 120.0
+offset_right = -518.0
+offset_bottom = -505.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+
+[node name="HeroHPLabel" type="Label" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 160.0
+offset_top = 55.0
+offset_right = -901.0
+offset_bottom = -570.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MonsterHPLabel" type="Label" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 905.0
+offset_top = 59.0
+offset_right = -148.0
+offset_bottom = -566.0
+grow_horizontal = 2
+grow_vertical = 2

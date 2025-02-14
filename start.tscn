@@ -1,0 +1,111 @@
+[gd_scene load_steps=3 format=3 uid="uid://cadpfcitj7j0j"]
+
+[ext_resource type="Script" path="res://start.gd" id="1_kk5iw"]
+[ext_resource type="Texture2D" uid="uid://dlg4f12q1vlf6" path="res://Back.jpg" id="2_lkkty"]
+
+[node name="Start" type="Node2D"]
+script = ExtResource("1_kk5iw")
+
+[node name="Back" type="Sprite2D" parent="."]
+position = Vector2(577.889, 325.25)
+scale = Vector2(0.968148, 0.968148)
+texture = ExtResource("2_lkkty")
+flip_h = true
+
+[node name="Panel2" type="Panel" parent="Back"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -119.702
+offset_top = 177.401
+offset_right = -1053.7
+offset_bottom = -403.6
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Quit" type="Button" parent="Back/Panel2"]
+texture_filter = 6
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1.99991
+offset_bottom = 0.000289917
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 33
+text = "Quit
+"
+
+[node name="Panel3" type="Panel" parent="Back"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -119.702
+offset_top = 64.8145
+offset_right = -1053.7
+offset_bottom = -516.186
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Results" type="Button" parent="Back/Panel3"]
+texture_filter = 6
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.996
+anchor_bottom = 1.0
+offset_right = 0.0640869
+offset_bottom = -1.99974
+theme_override_font_sizes/font_size = 33
+text = "Reults"
+
+[node name="Label" type="Label" parent="Back"]
+texture_filter = 6
+offset_left = -206.465
+offset_top = -270.878
+offset_right = 213.535
+offset_bottom = -106.878
+theme_override_font_sizes/font_size = 100
+text = "Start"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Login" type="Label" parent="Back"]
+texture_filter = 6
+offset_left = -206.465
+offset_top = -270.878
+offset_right = 213.535
+offset_bottom = -106.878
+theme_override_font_sizes/font_size = 100
+text = "Start"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="Back/Login"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.924
+anchor_top = -0.374
+anchor_right = 1.901
+anchor_bottom = 3.67
+offset_left = 477.942
+offset_top = 263.784
+offset_right = -452.558
+offset_bottom = -344.432
+
+[node name="Login" type="Button" parent="Back/Login/LineEdit"]
+texture_filter = 6
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.065
+anchor_top = 1.183
+anchor_right = 0.943
+anchor_bottom = 1.983
+offset_left = -0.113604
+offset_top = 0.00766754
+offset_right = 0.118393
+offset_bottom = 0.00765991
+theme_override_font_sizes/font_size = 24
+text = "Login"

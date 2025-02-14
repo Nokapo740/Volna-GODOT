@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dejupsggyel3n"]
+
+[ext_resource type="Script" path="res://lose.gd" id="1_jhrnb"]
+[ext_resource type="Texture2D" uid="uid://0cqlj8gadsmn" path="res://GOver.jpg" id="1_u3ea0"]
+
+[node name="Lose" type="Node2D"]
+script = ExtResource("1_jhrnb")
+
+[node name="GOver" type="Sprite2D" parent="."]
+position = Vector2(576, 322.5)
+scale = Vector2(1.164, 1.02399)
+texture = ExtResource("1_u3ea0")
+
+[node name="Button" type="Button" parent="GOver"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -252.0
+offset_top = -177.0
+offset_right = -769.0
+offset_bottom = -496.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true

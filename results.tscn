@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://yr02fy4fu8s0"]
+
+[ext_resource type="Texture2D" uid="uid://dlg4f12q1vlf6" path="res://Back.jpg" id="1_saxv4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Back" type="Sprite2D" parent="."]
+position = Vector2(577.889, 325.25)
+scale = Vector2(0.968148, 0.968148)
+texture = ExtResource("1_saxv4")
+flip_h = true
+
+[node name="Label" type="Label" parent="Back"]
+texture_filter = 6
+offset_left = -206.465
+offset_top = -270.878
+offset_right = 213.535
+offset_bottom = -106.878
+theme_override_font_sizes/font_size = 80
+text = "Results"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Panel" type="Panel" parent="Back"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -181.676
+offset_top = -127.305
+offset_right = -1009.68
+offset_bottom = -461.305
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Back" type="Button" parent="Back"]
+texture_filter = 6
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -49.4645
+offset_top = 237.309
+offset_right = -1133.46
+offset_bottom = -380.691
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Back"

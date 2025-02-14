@@ -1,0 +1,88 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmngw8cib1ola"]
+
+[ext_resource type="Script" path="res://history.gd" id="1_6r433"]
+[ext_resource type="Texture2D" uid="uid://dlg4f12q1vlf6" path="res://Back.jpg" id="1_e6bgj"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6r433")
+
+[node name="Back" type="Sprite2D" parent="."]
+position = Vector2(579, 327)
+scale = Vector2(0.968148, 0.968148)
+texture = ExtResource("1_e6bgj")
+flip_h = true
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 340.0
+offset_top = 126.0
+offset_right = -322.0
+offset_bottom = -421.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 49
+text = "Volna Game
+"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 458.0
+offset_top = 552.0
+offset_right = -463.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Next" type="Button" parent="VBoxContainer"]
+texture_filter = 6
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Next"
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.062
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 175.0
+offset_top = 177.824
+offset_right = -175.0
+offset_bottom = -136.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(1100, 303)
+
+[node name="Label" type="Label" parent="Panel"]
+texture_filter = 6
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 21.0
+offset_right = -2.0
+offset_bottom = -27.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 21
+text = "Artem, a young warrior, wakes in a dark dungeon with only a rusty sword. Strange noises surround him as he battles a menacing goblin, defeating it and gaining confidence.
+He encounters various monsters, uncovering cryptic symbols that hint at hidden secrets. Finally, he faces a powerful boss guarding the exit. After a fierce battle, he triumphs and steps into the sunlight, stronger and ready for new adventures."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
